@@ -7,7 +7,6 @@ import com.cgarrido.microservicelt.dto.signup.UserSignupResponse;
 
 
 import com.cgarrido.microservicelt.exceptions.ApiError;
-import com.cgarrido.microservicelt.exceptions.GlobalExceptionHandler;
 import com.cgarrido.microservicelt.service.CreateUserService;
 import com.cgarrido.microservicelt.service.LoginUserService;
 import io.swagger.v3.oas.annotations.Operation;
@@ -43,7 +42,7 @@ public class UsersController {
 
             @ApiResponse(responseCode = "500", description = "Error de sistema", content = {
                     @Content(mediaType = "application/json",
-                            schema = @Schema(implementation = GlobalExceptionHandler.class))}),
+                            schema = @Schema(implementation = ApiError.class))}),
             @ApiResponse(responseCode = "201", description = "Usuario creado exitosamente", content = {
                     @Content(mediaType = "application/json",
                             schema = @Schema(implementation = UserSignupResponse.class))}),
