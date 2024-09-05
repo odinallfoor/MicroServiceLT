@@ -15,7 +15,6 @@ import java.util.List;
 @AllArgsConstructor
 public class UserSignupRequest {
 
-
     private String name;
     private String email;
     private String password;

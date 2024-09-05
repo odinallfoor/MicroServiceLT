@@ -12,6 +12,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 public class PhonesResponse {
+
     private Long number;
     private Integer cityCode;
     private String countryCode;

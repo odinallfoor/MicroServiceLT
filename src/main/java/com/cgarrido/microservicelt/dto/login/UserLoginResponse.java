@@ -1,6 +1,5 @@
 package com.cgarrido.microservicelt.dto.login;
 
-import com.cgarrido.microservicelt.entities.Phones;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;

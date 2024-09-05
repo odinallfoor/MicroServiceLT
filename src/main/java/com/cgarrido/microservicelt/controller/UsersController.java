@@ -39,7 +39,6 @@ public class UsersController {
     }
 
     @Operation(summary = "Solicita la creación de un nuevo usuario en la base de datos", responses = {
-
             @ApiResponse(responseCode = "500", description = "Error de sistema", content = {
                     @Content(mediaType = "application/json",
                             schema = @Schema(implementation = ApiError.class))}),

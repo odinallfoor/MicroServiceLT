@@ -35,6 +35,5 @@ public class SecurityConfig {
         httpSecurity.headers().frameOptions().disable();
 
         return httpSecurity.build();
-
     }
 }
