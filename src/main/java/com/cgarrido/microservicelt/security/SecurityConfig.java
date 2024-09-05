@@ -21,7 +21,8 @@ public class SecurityConfig {
                 .csrf().disable()
                 .authorizeRequests()
                 // Permitir acceso a Swagger
-                .antMatchers("/swagger-ui/**",
+                .antMatchers("/swagger-ui.html",
+                        "/swagger-ui/**",
                         "/swagger-resources/**",
                         "/v3/api-docs/**",
                         "/webjars/**").permitAll()
